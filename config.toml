@@ -17,7 +17,7 @@ disqusShortname = "yourdiscussshortname"
   info = "Java Developer"
   description = "Ilya Pantsyr's Personal Website"
   keywords = "blog,developer,personal"
-  avatarURL = "images/my_av.png"
+  avatarURL = "my_av.png"
   #gravatar = "john.doe@example.com"
 
   favicon_32 = "/img/favicon-32x32.png"
