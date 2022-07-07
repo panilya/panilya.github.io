@@ -22,3 +22,15 @@ A Telegram Bot that shows cryptocurrency prices.
 A yet another implementation of Conway's Game of Life.
 
 ---
+
+### [JWT Auth Demo](https://github.com/panilya/fullstack-auth-jwt-demo)
+
+A Fullstack JWT authentication demo application using Spring Boot, Spring Security and React on frontend (refresh token support).
+
+---
+
+### [Spinning Donut](https://github.com/panilya/spinningdonut)
+
+An animated Spinning Donut.
+
+---
