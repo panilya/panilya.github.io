@@ -50,7 +50,7 @@ disqusShortname = "yourdiscussshortname"
   name = "Twitter"
   icon = "fa fa-twitter fa-2x"
   weight = 3
-  url = "https://twitter.com/johndoe/"
+  url = "https://twitter.com/pantsyr_ilya/"
 
 # Menu links
 [[menu.main]]
