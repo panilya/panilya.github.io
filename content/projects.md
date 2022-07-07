@@ -17,3 +17,8 @@ A Telegram Bot that shows cryptocurrency prices.
 
 ---
 
+### [Conway's Game of Life](https://github.com/panilya/gof)
+
+A yet another implementation of Conway's Game of Life.
+
+---
