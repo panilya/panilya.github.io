@@ -5,6 +5,14 @@ slug = "projects"
 
 ---
 
+### [Datafaker](https://github.com/datafaker-net/datafaker)
+
+An actively contributing to this project.
+
+This library is a modern port of [java-faker](https://github.com/DiUS/java-faker) (also contributed to java-faker in past), built on Java 8, with up to date libraries and several newly added Fake Generators.
+
+---
+
 ### [Let's PDF](https://github.com/panilya/letspdf)
 
 An Image(s) to PDF conversion service that allows you immediately convert .img to .pdf.
