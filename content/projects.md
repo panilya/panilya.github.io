@@ -7,7 +7,7 @@ slug = "projects"
 
 ### [Datafaker](https://github.com/datafaker-net/datafaker)
 
-An actively contributing to this project.
+I'm collaborator on this project. Fixing bugs, improving features and trying to make library better. 
 
 This library is a modern port of [java-faker](https://github.com/DiUS/java-faker) (also contributed to java-faker in past), built on Java 8, with up to date libraries and several newly added Fake Generators.
 
@@ -19,9 +19,10 @@ An Image(s) to PDF conversion service that allows you immediately convert .img t
 
 ---
 
-### [JDepChisel](https://github.com/panilya/jdepchisel)
+### [Mochaccino](https://github.com/panilya/mochaccino)
 
-An Java Dependency Visualizer. Works by scanning .class files and parsing it.
+A WebService/API that generates fake data for mocking your 
+programs.
 
 ---
 
@@ -34,6 +35,12 @@ A Telegram Bot that shows cryptocurrency prices.
 ### [JWT Auth Demo](https://github.com/panilya/fullstack-auth-jwt-demo)
 
 A Fullstack JWT authentication demo application using Spring Boot, Spring Security and React on frontend (refresh token support).
+
+---
+
+### [JDepChisel](https://github.com/panilya/jdepchisel)
+
+An Java Dependency Visualizer. Works by scanning .class files and parsing it.
 
 ---
 
