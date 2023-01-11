@@ -12,7 +12,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://panilya.github.io/about/</guid>
-      <description>My name is Ilya Pantsyr and I spend most of my time in front of the computer. I study at Chernivtsi National University (ChNU) in Ukraine, majoring in Software Engineering.</description>
+      <description>My name is Ilya Pantsyr and I spend most of my time in front of the computer. I study at Chernivtsi National University (ChNU) in Ukraine, majoring in Software Engineering (2021-2025). I specialize in backend system development using Java, Kotlin and Spring as my main technologies.
+Contact Telegram: https://t.me/ilya_pantsyr
+Email: panilyau@gmail.com</description>
     </item>
     
     <item>
@@ -30,11 +32,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://panilya.github.io/projects/</guid>
-      <description>Let&amp;rsquo;s PDF An Image(s) to PDF conversion service that allows you immediately convert .img to .pdf.
-TGCryptoBot A Telegram Bot that shows cryptocurrency prices.
-Conway&amp;rsquo;s Game of Life A yet another implementation of Conway&amp;rsquo;s Game of Life.
-JWT Auth Demo A Fullstack JWT authentication demo application using Spring Boot, Spring Security and React on frontend (refresh token support).
-Spinning Donut An animated Spinning Donut</description>
+      <description>Datafaker I&amp;rsquo;m collaborator on this project. Fixing bugs, improving features and trying to make library better.
+This library is a modern port of java-faker (also contributed to java-faker in past), built on Java 8, with up to date libraries and several newly added Fake Generators.
+Let&amp;rsquo;s PDF An Image(s) to PDF conversion service that allows you immediately convert .img to .pdf.
+Mochaccino A WebService/API that generates fake data for mocking your programs.</description>
     </item>
     
   </channel>
