@@ -14,7 +14,7 @@ disqusShortname = "yourdiscussshortname"
 
 [params]
   author = "Ilya Pantsyr"
-  info = "Java Developer"
+  info = "Java/Kotlin Developer"
   description = "Ilya Pantsyr | Blog"
   keywords = "blog,developer,personal"
   avatarURL = "my_av.png"
