@@ -9,7 +9,7 @@ Class loaders are an essential part of the Java Virtual Machine (JVM), but many 
 
 ## What are classloaders
 
-In the Java Virtual Machine (JVM), classes are loaded dynamically and found through a process called class loading. Class loading is the process of loading a class from its binary representation (usually a .class file) into memory so that it can be executed by the JVM. This is where we need classloaders. Classloaders are used to load .class file into the memory.
+In the Java Virtual Machine (JVM), classes are loaded dynamically and found through a process called class loading. Class loading is the process of loading a class from its binary representation (usually a .class file) into memory so that it can be executed by the JVM. This is where we need classloaders. Class loaders are used to load .class file into the memory.
 
 ## How classes are loaded in JVM
 
@@ -17,16 +17,23 @@ Classes are loaded in 3 steps:
 
 1. Creation and Loading step.
    First thing that happens is loading a class file using a class loader. There are two kinds of class loaders: the bootstrap class loader supplied by the JVM, and user-defined class loaders. (More details about class loaders are in the next chapter)
-   Then, instance of `java.lang.Class` class is created. What makes the class available to the JVM for further execution [A detailed step-by-step algorithm can be found in the Java Virtual Machine specification](https://docs.oracle.com/javase/specs/jvms/se20/html/jvms-5.html#jvms-5.2)
+   Then, instance of `java.lang.Class` class is created. What makes the class available to the JVM for further execution [A detailed step-by-step algorithm can be found in the Java Virtual Machine specification.](https://docs.oracle.com/javase/specs/jvms/se20/html/jvms-5.html#jvms-5.2)
 2. Linking step
    Before the class is ready for execution, the JVM needs to perform a number of preparatory operations, which include verification and preparation of the class for execution.
    Linking steps are following:
+
    1. Bytecode verification.
-      Verification ensures that the binary representation of a class or interface is structurally correct and is not corrupted, otherwise the class file will not be linked and a VerifyError error will be thrown. Verification can be turned off by the `-noverify` option. Turning off the verification can speed up the startup of the JVM, but disabling bytecode verification undermines Java's safety and security guarantees. [Why not to disable bytecode verification](https://wiki.sei.cmu.edu/confluence/display/java/ENV04-J.+Do+not+disable+bytecode+verification)
+
+      Verification ensures that the binary representation of a class or interface is structurally correct and is not corrupted, otherwise the class file will not be linked and a VerifyError error will be thrown. Verification can be turned off by the `-noverify` option. Turning off the verification can speed up the startup of the JVM, but disabling bytecode verification undermines Java's safety and security guarantees. [Why not to disable bytecode verification.](https://wiki.sei.cmu.edu/confluence/display/java/ENV04-J.+Do+not+disable+bytecode+verification)
+
    2. Preparation.
+
       Allocate RAM for static fields and initialize them with default values.
+
    3. Resolution of symbolic links.
+
       Since all references to fields, methods, and other classes are symbolic. JVM, in order to execute the class, you need to translate the references into internal representations.
+
 3. Initialization step.
    After a class is successfully loaded and linked, it can be initialized. At this stage, the static class initializers or static variable initializers are called, which ensures that static initialization block is executed only once and static variables are initialized correctly.
 
@@ -37,10 +44,15 @@ Also, it is worth remembering that Java implements delayed (or lazy) loading of 
 Class loaders has three important features that is worth to remember.
 
 - Delegation model
+
   When requested to find a class or resource, a class loader will delegate the search for the class or resource to its parent class loader before attempting to find the class or resource itself.
+
 - Visibility
+
   Classes loaded by a parent class loader are visible to its child class loaders, but classes loaded by a child class loader are not visible to its parent class loaders or children.
+
 - Uniqueness
+
   In Java a class is uniquely identified using `ClassLoader + Class` as the same class may be loaded by two different class loaders.
   `Class A loaded by ClassLoader A != Class A loaded by ClassLoader B`
   It is helpful for defining different protection and access policies for different classloaders.
@@ -61,12 +73,17 @@ It is important to note that the class loading hierarchy is hierarchical in natu
 
 The class loading mechanist in JVM doesn't use only one class loader. Every Java program has at least three class loaders:
 
-- Bootstrap (Primordial) Class Loader
+- Bootstrap (Primordial) class loader
+
   This is the root class loader and is responsible for loading core Java classes such as java.lang.Object and other classes in the Java standard library (also known as the Java Runtime Environment or JRE). It is implemented in native code and is part of the JVM itself. Althrough each class loader has its own `ClassLoader` object, there is not such object corresponding to the Bootstrap Class Loader. For example, if you would run this line of code
   `String.class.getClassLoader()`, you would get `null`.
-- Extension Class Loader
+
+- Extension class loader
+
   This class loader is responsible for loading classes from the extension directories (such as the jre/lib/ext directory in the JRE installation) and is child of Bootstrap Class Loader. You can also specify the locations of the extension directories via the `java.ext.dirs` system property.
+
 - System (Application) class loader
+
   This is the class loader that loads application-specific classes, usually from the classpath specified when running the Java application. The classpath can include directories, JAR files, and other resources. The classpath can be set using the CLASSPATH environment variable, the -classpath or -cp command-line option. The System/Application Class Loader is also implemented in Java and is a child of the Extension Class Loader.
 
 ## Class loaders and related to them changes over time
@@ -75,13 +92,18 @@ In the previous section, we've seen class loaders hierarchy that was in Java unt
 
 New class loaders hierarchy since Java 9 looks like this:
 
-- Bootstrap (Primordial) Class Loader
+- Bootstrap (Primordial) class loader
+
   This is the root class loader and is responsible for loading core Java classes such as `java.lang.Object` and other classes in the Java standard library (also known as the Java Runtime Environment or JRE). It is implemented in native code and is part of the JVM itself. Althrough each class loader has its own `ClassLoader` object, there is not such object corresponding to the Bootstrap class loader and, typically represented as `null`, and doesn't have a parent. For example, if you would run this line of code
   `String.class.getClassLoader()`, you would get `null`.
+
 - Platform class loader (former Extension class loader)
-  All classes in the Java SE Platform are guaranteed to be visible though the Platform class loader. Just because a class is visible through the platform class loader does not mean the class is actually defined by the platform class loader. Some classes in the Java SE Platform are defined by the platform class loader while others are defined by the bootstrap class loader. Applications should not depend on which class loader defines which platform class.
+
+  All classes in the Java SE Platform are guaranteed to be visible though the Platform class loader. Just because a class is visible through the platform class loader does not mean the class is actually defined by the platform class loader. Some classes in the Java SE Platform are defined by the platform class loader while others are defined by the Bootstrap class loader. Applications should not depend on which class loader defines which platform class.
+
 - System (Application) class loader
-  This is the class loader that loads application-specific classes, usually from the classpath specified when running the Java application. The classpath can include directories, JAR files, and other resources. The classpath can be set using the CLASSPATH environment variable, the -classpath or -cp command-line option. The System/Application Class Loader is also implemented in Java and is a child of the Extension Class Loader.
+
+  This is the class loader that loads application-specific classes, usually from the classpath specified when running the Java application. The classpath can include directories, JAR files, and other resources. The classpath can be set using the CLASSPATH environment variable, the -classpath or -cp command-line option. The System/Application class loader is also implemented in Java and is a child of the Extension class loader.
 
 There are even more changes that were introduced in Java 9 which are related to class loaders, namely:
 
