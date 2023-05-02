@@ -10,7 +10,7 @@ pygmentsstyle = "bw"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-disqusShortname = "yourdiscussshortname"
+disqusShortname = "Illia Pantsyr"
 
 [params]
   author = "Ilya Pantsyr"
@@ -29,6 +29,9 @@ disqusShortname = "yourdiscussshortname"
 
   colorScheme = "auto"
   hidecolorschemetoggle = false
+
+[params.goatCounter]
+  code = "panilya"
 
 #  customCSS = ["css/custom.css"]
 #  customSCSS = ["scss/custom.scss"]
