@@ -1,5 +1,5 @@
 +++ 
-author = "Ilya Pantsyr" 
+author = "Illia Pantsyr" 
 title = "Ways to reduce JVM Docker image size" 
 date = "2023-11-05" 
 tags = [ "docker", "java", "jvm", "cloud" ] 

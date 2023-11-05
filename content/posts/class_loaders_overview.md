@@ -1,8 +1,8 @@
 +++ 
-author = "Ilya Pantsyr" 
+author = "Illia Pantsyr" 
 title = "Class Loaders in JVM: An Overview" 
 date = "2023-04-20" 
-tags = [ "java", "jvm", ] 
+tags = [ "java", "jvm"] 
 +++
 
 Class loaders are an essential part of the Java Virtual Machine (JVM), but many developers consider them to be mysterious. This article aims to demystify the subject by providing a basic understanding of how class loading works in the JVM.
