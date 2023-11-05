@@ -3,7 +3,7 @@ title = "About"
 slug = "about"
 +++
 
-My name is Illia and I'm a Software Developer with interest in backend systems. I work on cool AI Assistant and more at [BotsCrew](https://botscrew.com/) and from time to time I write articles on different interesting to me topics and contribute to Open-Source projects.
+My name is Illia and I'm a Software Developer with interest in backend systems. I work on cool AI assistants and more at [BotsCrew](https://botscrew.com/). Also, from time to time I write articles on different interesting to me topics and contribute to Open-Source projects.
 
 Other places I publish my articles are:
 
