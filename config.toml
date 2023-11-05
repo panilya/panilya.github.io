@@ -1,5 +1,5 @@
 baseurl = "https://panilya.github.io/"
-title = "Ilya Pantsyr's Blog"
+title = "Ilya Pantsyr"
 theme = "hugo-coder"
 languagecode = "en"
 defaultcontentlanguage = "en"
@@ -14,7 +14,7 @@ disqusShortname = "Illia Pantsyr"
 
 [params]
   author = "Ilya Pantsyr"
-  info = "Java/Kotlin Developer"
+  info = "Software Developer"
   description = "Ilya Pantsyr | Blog"
   keywords = "blog,developer,personal"
   avatarURL = "my_av.png"
