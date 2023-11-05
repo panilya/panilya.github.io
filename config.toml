@@ -1,5 +1,5 @@
 baseurl = "https://panilya.github.io/"
-title = "Ilya Pantsyr"
+title = "Illia Pantsyr"
 theme = "hugo-coder"
 languagecode = "en"
 defaultcontentlanguage = "en"
@@ -13,9 +13,9 @@ pygmentscodefencesguesssyntax = true
 disqusShortname = "Illia Pantsyr"
 
 [params]
-  author = "Ilya Pantsyr"
+  author = "Illia Pantsyr"
   info = "Software Developer"
-  description = "Ilya Pantsyr | Blog"
+  description = "Illia Pantsyr | Blog"
   keywords = "blog,developer,personal"
   avatarURL = "my_av.png"
   #gravatar = "john.doe@example.com"
