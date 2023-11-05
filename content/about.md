@@ -3,10 +3,14 @@ title = "About"
 slug = "about"
 +++
 
-My name is Ilya Pantsyr and I spend most of my time in front of the computer. I study at Chernivtsi National University (ChNU) in Ukraine, majoring in Software Engineering (2021-2025). I specialize in backend system development using Java, Kotlin and Spring as my main technologies.
+My name is Illia and I'm a Software Developer with interest in backend systems. I work on cool AI Assistant and more at [BotsCrew](https://botscrew.com/) and from time to time I write articles on different interesting to me topics and contribute to Open-Source projects.
+
+Other places I publish my articles:
+DZone: <https://dzone.com/users/4453271/panilya.html>
+dev.to: <https://dev.to/panilya>
 
 ## Contact
 
-Telegram: <https://t.me/ilya_pantsyr>
+Telegram: <https://t.me/illia_pantsyr>
 
-Email: panilyau@gmail.com
+Email: `panilyau at gmail dot com`
