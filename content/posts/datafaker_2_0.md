@@ -35,14 +35,14 @@ When working with CSV files, there may be times when you need to create CSV file
 Let's look at an example:
 
 ``` java
-        Faker faker = new Faker(Locale.GERMANY); // Datafaker supports any locale from the Locale package
-        Schema<Object, ?> schema = Schema.of( // Define a schema, which we can use in any Transformer
-            field("firstName", () -> faker.name().firstName()),
-            field("lastName", () -> faker.name().lastName()),
-            field("phoneNumber", () -> faker.phoneNumber().phoneNumberInternational()));
+Faker faker = new Faker(Locale.GERMANY); // Datafaker supports any locale from the Locale package
+Schema<Object, ?> schema = Schema.of( // Define a schema, which we can use in any Transformer
+    field("firstName", () -> faker.name().firstName()),
+    field("lastName", () -> faker.name().lastName()),
+    field("phoneNumber", () -> faker.phoneNumber().phoneNumberInternational()));
         
-        CsvTransformer<Object> csvTransformer = CsvTransformer.builder().build(); // Instantiate CsvTransformer using the appropriate builder.
-        System.out.println(csvTransformer.generate(schema, 5)); // This is where the magic happens. Call the `generate` method on the transformer with your schema plus the number of records to get the result as a string.
+CsvTransformer<Object> csvTransformer = CsvTransformer.builder().build(); // Instantiate CsvTransformer using the appropriate builder.
+System.out.println(csvTransformer.generate(schema, 5)); // This is where the magic happens. Call the `generate` method on the transformer with your schema plus the number of records to get the result as a string.
 ```
 
 A possible result that can be obtained by executing the code above can be found below:
@@ -88,18 +88,18 @@ public record Client(String firstName, String lastName, String phoneNumber) { }
 Next, we need to provide the Schema for our class.
 
 ``` java
-        Faker faker = new Faker();
-        JavaObjectTransformer jTransformer = new JavaObjectTransformer();
-        
-        Schema<Object, ?> schema = Schema.of(
-                field("firstName", () -> faker.name().firstName()),
-                field("lastName", () -> faker.name().lastName()),
-                field("phoneNumber", () -> faker.phoneNumber().phoneNumberInternational())
-        );
-        System.out.println(jTransformer.apply(Client.class, schema));
+Faker faker = new Faker();
+JavaObjectTransformer jTransformer = new JavaObjectTransformer();
+
+Schema<Object, ?> schema = Schema.of(
+    field("firstName", () -> faker.name().firstName()),
+    field("lastName", () -> faker.name().lastName()),
+    field("phoneNumber", () -> faker.phoneNumber().phoneNumberInternational())
+);
+System.out.println(jTransformer.apply(Client.class, schema));
 ```
 
-The result of our program will be as follows: 
+The result of our program will be as follows:
 `Client{firstName='Elton', lastName='Conroy', phoneNumber='+1 808-239-0480'}`
 
 #### JavaObjectTransformer with Transformer and predefined Schema
@@ -112,14 +112,14 @@ Let's move on to a practical example:
 First of all, we need to define our schema for our model. It is defined as follows and, on my machine, located in the `com.datafaker` package in the `DatafakerSchema` class:
 
 ``` java
-    public static Schema<Object, ?> defaultSchema() {
-        var faker = new Faker(Locale.UK, new RandomService(new Random(1)));
-        return Schema.of(
-                field("firstName", () -> faker.name().firstName()),
-                field("lastName", () -> faker.name().lastName()),
-                field("phoneNumber", () -> faker.phoneNumber().phoneNumberInternational())
-        );
-    }
+public static Schema<Object, ?> defaultSchema() {
+    var faker = new Faker(Locale.UK, new RandomService(new Random(1)));
+    return Schema.of(
+        field("firstName", () -> faker.name().firstName()),
+        field("lastName", () -> faker.name().lastName()),
+        field("phoneNumber", () -> faker.phoneNumber().phoneNumberInternational())
+    );
+}
 ```
 
 Then you should provide a class to be used as a template for generated objects. This class should be annotated with the `@FakeForSchema` annotation with the path to the schema method as a value.
@@ -133,17 +133,17 @@ public record Client(String firstName, String lastName, String phoneNumber) { }
 Then you can use `net.datafaker.providers.base.BaseFaker.populate(java.lang.Class<T>)` to populate the object with the default predefined schema.
 
 ``` java
-    Client client = BaseFaker.populate(Client.class);
+Client client = BaseFaker.populate(Client.class);
 ```
 
 Alternatively, you can use `net.datafaker.providers.base.BaseFaker.populate(java.lang.Class<T>, net.datafaker.schema.Schema<java.lang.Object, ?>)` to populate the object with a custom schema:
 
 ``` java
-    Client client = BaseFaker.populate(Client.class, Schema.of(
-                field("firstName", () -> faker.name().firstName()),
-                field("lastName", () -> faker.name().lastName()),
-                field("phoneNumber", () -> faker.phoneNumber().phoneNumberInternational())
-        ));
+Client client = BaseFaker.populate(Client.class, Schema.of(
+    field("firstName", () -> faker.name().firstName()),
+    field("lastName", () -> faker.name().lastName()),
+    field("phoneNumber", () -> faker.phoneNumber().phoneNumberInternational())
+));
 ```
 
 The result of both `populate` methods will be the same:
@@ -163,15 +163,15 @@ Datafaker supports two types of fake sequences:
 FakeCollection is used to generate an in-memory list of fake values. Let's take a look at a practical example:
 
 ``` java
-        Faker faker = new Faker();
-        List<String> names =
-                faker.collection(
-                                () -> faker.name().fullName(),
-                                () -> faker.address().city())
-                        .len(2, 6)
-                        .generate();
+Faker faker = new Faker();
+List<String> names =
+    faker.collection(
+        () -> faker.name().fullName(),
+        () -> faker.address().city())
+    .len(2, 6)
+    .generate();
                         
-        System.out.println(names);
+System.out.println(names);
 ```
 
 This code example will generate a List of fake values, where each element will either be a full name or a city, with a length between 2 and 6 elements. This is a possible result of the code above:
@@ -183,22 +183,22 @@ FakeStream is used to generate a `java.util.stream.Stream` of fake values. FakeS
 Imagine you need to model a constant stream of data. For example, the temperature from an IoT temperature sensor. In this case, FakeStream will be the right choice. Let's see how to write this in code:
 
 ``` java
-        Faker faker = new Faker();
-        Stream<Object> objects =
-                faker.<Object>stream(() -> faker.random().nextDouble(20, 22))
-                        .generate();
-        objects.forEach(System.out::println);
+Faker faker = new Faker();
+Stream<Object> objects =
+    faker.<Object>stream(() -> faker.random().nextDouble(20, 22))
+        .generate();
+objects.forEach(System.out::println);
 ```
 
 This code will generate a constant stream of doubles between 20 and 22. However, it's also possible to specify the length of the stream via the `len(int minLength, int maxLength)` or `len(int length)` parameter.
 
 ``` java
-        Faker faker = new Faker();
-        Stream<Object> objects =
-                faker.<Object>stream(() -> faker.random().nextDouble(20, 22))
-                        .len(3, 5)
-                        .generate();
-        objects.forEach(System.out::println);
+Faker faker = new Faker();
+Stream<Object> objects =
+    faker.<Object>stream(() -> faker.random().nextDouble(20, 22))
+        .len(3, 5)
+        .generate();
+objects.forEach(System.out::println);
 ```
 
 The possible result may be: `21.663129306577716
