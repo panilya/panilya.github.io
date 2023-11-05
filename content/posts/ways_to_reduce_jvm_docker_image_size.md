@@ -54,11 +54,11 @@ To install Dive follow the guide in their README: https://github.com/wagoodman/d
 
 Now, let’s find out why our Docker image has such a size by exploring layers by using this command: `dive spring-pet-clinic/jdk` (instead of `spring-pet-clinic/jdk` use your Docker image name).
 
-![Docker image overview using Dive tool of a basic Dockerfile](static/ways_to_reduce_jvm_docker_image_size_resources/basic_image_dive_1.png)
+![Docker image overview using Dive tool of a basic Dockerfile](/ways_to_reduce_jvm_docker_image_size_resources/basic_image_dive_1.png)
 
 Its output may feel a little bit overwhelming but don’t worry we will explore its output together. For our purpose, we are mostly interested only in the top left part, which is the layers of our Docker image. We can navigate between layers by using “arrow” buttons. Now, let’s find out which layers our Docker image consists of.
 
-![Docker image overview using Dive tool of a basic Dockerfile](static/ways_to_reduce_jvm_docker_image_size_resources/basic_image_dive_2.png)
+![Docker image overview using Dive tool of a basic Dockerfile](/ways_to_reduce_jvm_docker_image_size_resources/basic_image_dive_2.png)
 
 (Remember, these are the layers of Docker image built from our basic Dockerfile)
 
@@ -196,10 +196,10 @@ Let's take another look, using Dive, at how our Docker images have shrunk after 
 
  Instead of using the entire JDK, in this case, we built our custom JRE using jlink tool and using `debian-slim` base image. Which significantly reduced our image size. And, as you can see, we don’t have unnecessary stuff, such as timezones, locales, big OS and entire JDK. We include only what we use and need.
 
-![Docker image overview using Dive tool after jlink optimization](static/ways_to_reduce_jvm_docker_image_size_resources/jlink_dive_image.png)
+![Docker image overview using Dive tool after jlink optimization](/ways_to_reduce_jvm_docker_image_size_resources/jlink_dive_image.png)
 
 Here, we went even further and passed only used Java modules to our JRE, making the built JRE even smaller, thus reducing the size of the entire final image.
 
-![Docker image overview using Dive tool after jdeps optimization](static/ways_to_reduce_jvm_docker_image_size_resources/jlink_jdeps_dive_image.png)
+![Docker image overview using Dive tool after jdeps optimization](/ways_to_reduce_jvm_docker_image_size_resources/jlink_jdeps_dive_image.png)
 
 In conclusion, reducing the size of JVM Docker images can significantly optimize resource usage and speed up deployments. Employing techniques like multi-stage builds, jlink, jdeps, and experimenting with base images can make a substantial difference. While the size reduction might seem minimal in some cases, the cumulative effect can be significant, especially in environments where multiple containers are running. Thus, optimizing Docker images should be a key consideration in any application development and deployment process.
