@@ -19,6 +19,9 @@ I also believe that the best way to consolidate knowledge of something is to try
 ## Contact me
 
 Telegram: <https://t.me/illia_pantsyr>
+
 LinkedIn: <https://www.linkedin.com/in/panilya/>
+
 GitHub: <https://github.com/panilya>
+
 Email: `panilyau at gmail dot com`
