@@ -14,7 +14,7 @@ disqusShortname = "Illia Pantsyr"
 
 [params]
   author = "Illia Pantsyr"
-  info = "Software Developer"
+  info = "Software Engineer"
   description = "Illia Pantsyr | Blog"
   keywords = "blog,developer,personal"
   avatarURL = "my_av.png"
@@ -64,7 +64,3 @@ disqusShortname = "Illia Pantsyr"
   name = "About"
   weight = 2
   url = "about/"
-[[menu.main]]
-  name = "Resume"
-  weight = 3
-  url = "resume.pdf"
