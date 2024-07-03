@@ -3,13 +3,13 @@ title = "Hello 👋🏼"
 slug = "about"
 +++
 
-My name is Illia Pantsyr. I’m getting undergraduate degree in Software Engineering from Chernivtsi National University in Ukraine. I’ve worked with a wide variety of technologies over the last 2 years of commercial experience. Some of the technologies I worked the most are:
+My name is Illia. I've worked with a wide variety of technologies over the last 2+ years of commercial experience. Some of the technologies I worked the most are:
 
 - Java, Spring Boot, Spring Data JPA/JDBC, Spring Security, Hibernate
+- Large Language Models, Generative AI
 - Kotlin on server-side
 - React, TypeScript, NextJS, NodeJS
 - Relational databases, MongoDB, Redis
-- Generative AI, LLMs
 - AWS, Docker
 
 I’ve always been fascinated by Open-Source projects and its community and were participating in it way before my first commercial experience. One of the Open-Source project I’m proud to be involved in is [Datafaker](https://github.com/datafaker-net/datafaker).
