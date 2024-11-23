@@ -49,11 +49,6 @@ disqusShortname = "Illia Pantsyr"
   icon = "fa fa-github fa-2x"
   weight = 1
   url = "https://github.com/panilya/"
-[[params.social]]
-  name = "Twitter"
-  icon = "fa fa-twitter fa-2x"
-  weight = 3
-  url = "https://twitter.com/pantsyr_ilya/"
 
 # Menu links
 [[menu.main]]

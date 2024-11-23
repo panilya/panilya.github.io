@@ -3,13 +3,14 @@ title = "Hello 👋🏼"
 slug = "about"
 +++
 
-My name is Illia. Over the last 2+ years of commercial experience I've worked with a wide variety of technologies. Some of the technologies I worked the most are:
+My name is Illia. Over the last few years of commercial experience I've worked with a wide variety of technologies. My main interests are Backend systems and Generative AI. Some of the technologies I worked the most are:
 
 - Java, Spring Boot, Spring Data JPA/JDBC, Spring Security, Hibernate
+- Python, LlamaIndex, FastAPI
 - Large Language Models, Generative AI
 - Kotlin on server-side
 - React, TypeScript, NextJS, NodeJS
-- Relational databases, MongoDB, Redis
+- Relational databases, MongoDB, Redis, Vector databases
 - AWS, Docker
 
 I've always been fascinated by Open-Source projects and its community and were participating in it way before my first commercial experience. One of the Open-Source project I’m proud to be involved in is [Datafaker](https://github.com/datafaker-net/datafaker).
