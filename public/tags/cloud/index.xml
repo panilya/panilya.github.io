@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>cloud on Illia Pantsyr</title>
+    <title>Cloud on Illia Pantsyr</title>
     <link>https://panilya.github.io/tags/cloud/</link>
-    <description>Recent content in cloud on Illia Pantsyr</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Cloud on Illia Pantsyr</description>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 05 Nov 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://panilya.github.io/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
@@ -13,8 +13,7 @@
       <link>https://panilya.github.io/posts/ways_to_reduce_jvm_docker_image_size/</link>
       <pubDate>Sun, 05 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://panilya.github.io/posts/ways_to_reduce_jvm_docker_image_size/</guid>
-      <description>This blog post focuses on optimizing the size of JVM Docker images. It explores various techniques such as multi-stage builds, jlink, jdeps, and experimenting with base images. By implementing these optimizations, deployments can be faster and resource usage can be optimized.
-The problem Since Java 11, there is no pre-bundled JRE provided. As a result, basic Dockerfiles without any optimization can result in large image sizes. In the absence of a provided JRE, it becomes necessary to explore techniques and optimizations to reduce the size of JVM Docker images.</description>
+      <description>&lt;p&gt;This blog post focuses on optimizing the size of JVM Docker images. It explores various techniques such as multi-stage builds, jlink, jdeps, and experimenting with base images. By implementing these optimizations, deployments can be faster and resource usage can be optimized.&lt;/p&gt;&#xA;&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;&#xA;&lt;p&gt;Since Java 11, there is no pre-bundled JRE provided. As a result, basic Dockerfiles without any optimization can result in large image sizes. In the absence of a provided JRE, it becomes necessary to explore techniques and optimizations to reduce the size of JVM Docker images.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

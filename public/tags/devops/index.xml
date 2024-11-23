@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>devops on Illia Pantsyr</title>
+    <title>Devops on Illia Pantsyr</title>
     <link>https://panilya.github.io/tags/devops/</link>
-    <description>Recent content in devops on Illia Pantsyr</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Devops on Illia Pantsyr</description>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 09 May 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://panilya.github.io/tags/devops/index.xml" rel="self" type="application/rss+xml" />
@@ -13,8 +13,7 @@
       <link>https://panilya.github.io/posts/deployment_strategies/</link>
       <pubDate>Thu, 09 May 2024 00:00:00 +0000</pubDate>
       <guid>https://panilya.github.io/posts/deployment_strategies/</guid>
-      <description>Deployment strategies provide a systematic approach to releasing software changes, minimizing risks, and maintaining consistency across projects and teams. Without a well-defined strategy and systematic approach, deployments can lead to downtime, data loss, or system failures, resulting in frustrated users and revenue loss. Before we start exploring different deployment strategies in more detail, let’s take a look at the short overview of each deployment strategy mentioned in this article:
-All-at-once deployment: This strategy involves updating all the target environments at once, making it the fastest but riskiest approach.</description>
+      <description>&lt;p&gt;Deployment strategies provide a systematic approach to releasing software changes, minimizing risks, and maintaining consistency across projects and teams.&#xA;Without a well-defined strategy and systematic approach, deployments can lead to downtime, data loss, or system failures, resulting in frustrated users and revenue loss.&#xA;Before we start exploring different deployment strategies in more detail, let’s take a look at the short overview of each deployment strategy mentioned in this article:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;All-at-once deployment: This strategy involves updating all the target environments at once, making it the fastest but riskiest approach.&lt;/li&gt;&#xA;&lt;li&gt;In-place deployment: This involves stopping the current application and replacing it with a new version, directly affecting availability.&lt;/li&gt;&#xA;&lt;li&gt;Blue/Green deployment: A zero-downtime approach that involves running two identical environments and switching from old to new.&lt;/li&gt;&#xA;&lt;li&gt;Canary deployment: Introduces new changes incrementally to a small subset of users before a full rollout.&lt;/li&gt;&#xA;&lt;li&gt;Shadow deployment: Mirrors real traffic to a shadow environment where the new deployment is tested without affecting the live environment.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;all-at-once-deployment&#34;&gt;All-at-once deployment&lt;/h2&gt;&#xA;&lt;p&gt;All-at-once deployment strategy, also known as the &amp;ldquo;Big Bang&amp;rdquo; deployment strategy, involves simultaneously releasing your application&amp;rsquo;s new version to all servers or environments. This method is straightforward and can be implemented quickly, as it does not require complex orchestration or additional infrastructure. The primary benefit of this approach is its simplicity and the ability to immediately transition all users to the new version of the application.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
