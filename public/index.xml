@@ -1,13 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ilya Pantsyr</title>
+    <title>Illia Pantsyr</title>
     <link>https://panilya.github.io/</link>
-    <description>Recent content on Ilya Pantsyr</description>
+    <description>Recent content on Illia Pantsyr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 05 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 23 Nov 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://panilya.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Could GPU hardware failures limit AI training scaling?</title>
+      <link>https://panilya.github.io/posts/could_gpu_hardware_failures_limit_ai_training_scaling/</link>
+      <pubDate>Sat, 23 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://panilya.github.io/posts/could_gpu_hardware_failures_limit_ai_training_scaling/</guid>
+      <description>A fresh analytical report from Epoch AI on the continued scaling of training capacity. In this work, they attempt to answer the following question: to what extent is scaling limited by hardware issues?
+Graphics processing units (GPUs) can fail during training for various reasons: memory damage, disconnections/restarts, or network issues. Even a single slightly slowed-down GPU can become a bottleneck for the entire system if not replaced promptly.
+When Meta trained its largest model, Llama 3.</description>
+    </item>
+    <item>
+      <title>Paper summary | Lost in the Middle: How Language Models Use Long Contexts</title>
+      <link>https://panilya.github.io/posts/lost_in_the_middle_how_language_models_use_long_contexts/</link>
+      <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://panilya.github.io/posts/lost_in_the_middle_how_language_models_use_long_contexts/</guid>
+      <description>Almost 1 year ago, Lost in the Middle: How Language Models Use Long Contexts paper was published that empirically investigated the effectiveness of finding information in the input context depending on the location of the correct answer in the context among other relevant information. The researchers used gpt-3.5-turbo, gpt-3.5-turbo-16k, Claude 1.3, Claude 1.3 (100k), MPT-30B-Instruct and LongChat-13B (16k) and found that the quality jumps A LOT when you change the position of a piece of text with the correct answer among other relevant text that does not contain the answer to the question.</description>
+    </item>
+    <item>
+      <title>Deployment Strategies</title>
+      <link>https://panilya.github.io/posts/deployment_strategies/</link>
+      <pubDate>Thu, 09 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://panilya.github.io/posts/deployment_strategies/</guid>
+      <description>Deployment strategies provide a systematic approach to releasing software changes, minimizing risks, and maintaining consistency across projects and teams. Without a well-defined strategy and systematic approach, deployments can lead to downtime, data loss, or system failures, resulting in frustrated users and revenue loss. Before we start exploring different deployment strategies in more detail, let’s take a look at the short overview of each deployment strategy mentioned in this article:
+All-at-once deployment: This strategy involves updating all the target environments at once, making it the fastest but riskiest approach.</description>
+    </item>
     <item>
       <title>Ways to reduce JVM Docker image size</title>
       <link>https://panilya.github.io/posts/ways_to_reduce_jvm_docker_image_size/</link>
@@ -15,6 +39,14 @@
       <guid>https://panilya.github.io/posts/ways_to_reduce_jvm_docker_image_size/</guid>
       <description>This blog post focuses on optimizing the size of JVM Docker images. It explores various techniques such as multi-stage builds, jlink, jdeps, and experimenting with base images. By implementing these optimizations, deployments can be faster and resource usage can be optimized.
 The problem Since Java 11, there is no pre-bundled JRE provided. As a result, basic Dockerfiles without any optimization can result in large image sizes. In the absence of a provided JRE, it becomes necessary to explore techniques and optimizations to reduce the size of JVM Docker images.</description>
+    </item>
+    <item>
+      <title>Datafaker 2.0</title>
+      <link>https://panilya.github.io/posts/datafaker_2_0/</link>
+      <pubDate>Wed, 14 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://panilya.github.io/posts/datafaker_2_0/</guid>
+      <description>One of the major changes in Datafaker 2.0 is the requirement for Java version 17 as a minimum, similar to popular frameworks such as Spring Boot 3.0. This release of Datafaker brings significant improvements to the library&amp;rsquo;s performance, support of Java Records, capability to generate larger amounts of test data, and much more.
+Schemas and transformers The most common use case for Datafaker is to generate random readable values in Java, such as firstnames, quotes or other values.</description>
     </item>
     <item>
       <title>Class Loaders in JVM: An Overview</title>
@@ -25,14 +57,12 @@ The problem Since Java 11, there is no pre-bundled JRE provided. As a result, ba
 What are classloaders In the Java Virtual Machine (JVM), classes are loaded dynamically and found through a process called class loading. Class loading is the process of loading a class from its binary representation (usually a .</description>
     </item>
     <item>
-      <title>About</title>
+      <title>Hello 👋🏼</title>
       <link>https://panilya.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://panilya.github.io/about/</guid>
-      <description>My name is Illia and I&amp;rsquo;m a Software Developer with interest in backend systems. I work on cool AI Assistant and more at BotsCrew and from time to time I write articles on different interesting to me topics and contribute to Open-Source projects.
-Other places I publish my articles: DZone: https://dzone.com/users/4453271/panilya.html dev.to: https://dev.to/panilya
-Contact Telegram: https://t.me/illia_pantsyr
-Email: panilyau at gmail dot com</description>
+      <description>My name is Illia. Over the last 2+ years of commercial experience I&amp;rsquo;ve worked with a wide variety of technologies. Some of the technologies I worked the most are:
+Java, Spring Boot, Spring Data JPA/JDBC, Spring Security, Hibernate Large Language Models, Generative AI Kotlin on server-side React, TypeScript, NextJS, NodeJS Relational databases, MongoDB, Redis AWS, Docker I&amp;rsquo;ve always been fascinated by Open-Source projects and its community and were participating in it way before my first commercial experience.</description>
     </item>
   </channel>
 </rss>

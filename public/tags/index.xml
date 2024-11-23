@@ -1,13 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Ilya Pantsyr</title>
+    <title>Tags on Illia Pantsyr</title>
     <link>https://panilya.github.io/tags/</link>
-    <description>Recent content in Tags on Ilya Pantsyr</description>
+    <description>Recent content in Tags on Illia Pantsyr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 05 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 23 Nov 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://panilya.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ai</title>
+      <link>https://panilya.github.io/tags/ai/</link>
+      <pubDate>Sat, 23 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://panilya.github.io/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>llm</title>
+      <link>https://panilya.github.io/tags/llm/</link>
+      <pubDate>Sat, 23 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://panilya.github.io/tags/llm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>devops</title>
+      <link>https://panilya.github.io/tags/devops/</link>
+      <pubDate>Thu, 09 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://panilya.github.io/tags/devops/</guid>
+      <description></description>
+    </item>
     <item>
       <title>cloud</title>
       <link>https://panilya.github.io/tags/cloud/</link>
@@ -34,6 +55,20 @@
       <link>https://panilya.github.io/tags/jvm/</link>
       <pubDate>Sun, 05 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://panilya.github.io/tags/jvm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>datafaker</title>
+      <link>https://panilya.github.io/tags/datafaker/</link>
+      <pubDate>Wed, 14 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://panilya.github.io/tags/datafaker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>open-source</title>
+      <link>https://panilya.github.io/tags/open-source/</link>
+      <pubDate>Wed, 14 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://panilya.github.io/tags/open-source/</guid>
       <description></description>
     </item>
   </channel>

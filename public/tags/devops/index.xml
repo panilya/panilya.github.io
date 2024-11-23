@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>devops on Illia Pantsyr</title>
+    <link>https://panilya.github.io/tags/devops/</link>
+    <description>Recent content in devops on Illia Pantsyr</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 09 May 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://panilya.github.io/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deployment Strategies</title>
+      <link>https://panilya.github.io/posts/deployment_strategies/</link>
+      <pubDate>Thu, 09 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://panilya.github.io/posts/deployment_strategies/</guid>
+      <description>Deployment strategies provide a systematic approach to releasing software changes, minimizing risks, and maintaining consistency across projects and teams. Without a well-defined strategy and systematic approach, deployments can lead to downtime, data loss, or system failures, resulting in frustrated users and revenue loss. Before we start exploring different deployment strategies in more detail, let’s take a look at the short overview of each deployment strategy mentioned in this article:
+All-at-once deployment: This strategy involves updating all the target environments at once, making it the fastest but riskiest approach.</description>
+    </item>
+  </channel>
+</rss>
