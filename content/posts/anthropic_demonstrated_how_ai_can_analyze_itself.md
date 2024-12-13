@@ -15,6 +15,8 @@ Clio allows for examining real-life scenarios of AI usage in everyday life while
 - Cultural differences: AI usage varies by region; for instance, in Japan, discussions often center on societal challenges like aging populations.
 - Enhanced security: Clio’s analysis uncovered new ways people attempt to misuse AI, enabling developers to strengthen safeguards.
 
+![Top uses of Claude.ai](/anthropic_demonstrated_how_ai_can_analyze_itself/top_uses_of_claude_ai.png)
+
 This system functions much like Google Trends, but for conversations with AI, identifying patterns, anomalies, and trends without exposing personal user data. It’s a breakthrough in understanding how people truly engage with AI systems.
 
 ### How Anthropic’s Clio works
