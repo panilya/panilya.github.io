@@ -21,9 +21,8 @@ This system functions much like Google Trends, but for conversations with AI, id
 
 At the foundation of Clio is a multi-level data processing pipeline, featuring:
 
-
 #### Feature extraction
-Clio uses specialized language models to:
+Clio uses Anthropic's LLMs to:
   - Analyze individual dialogues and extract parameters like language, topic, and user intent.
   - Work with direct metrics (e.g., dialogue length) and perform semantic analysis for deeper insights.
 
