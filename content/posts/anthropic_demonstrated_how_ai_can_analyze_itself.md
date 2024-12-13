@@ -1,7 +1,7 @@
 +++
 author = "Illia Pantsyr"
 title = "Anthropic demonstrated how AI can analyze itself"
-date = "2024-11-23"
+date = "2024-12-13"
 tags = [ "llm", "ai", "anthropic"]
 +++
 
