@@ -5,8 +5,6 @@ date = "2024-12-13"
 tags = [ "llm", "ai", "anthropic"]
 +++
 
-# Anthropic demonstrated how AI can analyze itself
-
 Yesterday, Anthropic published an amazing study—they developed a system called Clio, which can safely analyze millions of conversations with the AI assistant Claude.
 
 ### A New Perspective on AI Usage
