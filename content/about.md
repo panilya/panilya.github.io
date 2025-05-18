@@ -3,15 +3,18 @@ title = "Hello 👋🏼"
 slug = "about"
 +++
 
-My name is Illia. Over the last few years of commercial experience I've worked with a wide variety of technologies. My main interests are Backend systems and Generative AI. Some of the technologies I worked the most are:
+I'm Illia and I'm an AI Engineer with deep expertise in AI Agents, Generative AI, and Scalable Backend Systems focused on delivering value for clients and making projects successful. I've worked in multiple high-impact domains, including healthcare, customer support, and sales/marketing, where I've consistently delivered innovative AI-based solutions for both startups and Fortune 500 companies.
 
-- Java, Spring Boot, Spring Data JPA/JDBC, Spring Security, Hibernate
-- Python, LlamaIndex, FastAPI
-- Large Language Models, Generative AI
-- Kotlin on server-side
-- React, TypeScript, NextJS, NodeJS
-- Relational databases, MongoDB, Redis, Vector databases
-- AWS, Docker
+### Technical Skills:
+
+- **AI/ML:** AI Agents, Large Language Models, Generative AI, LangChain/LangGraph, LlamaIndex, Langfuse, RelevanceAI
+- **Backend**: Java/Kotlin, Spring Boot, Spring Data JPA/JDBC, Spring Security, Hibernate, Liquibase/Flyway
+- **Python:** FastAPI, AI/ML frameworks
+- **Frontend:** React, JavaScript/TypeScript, NextJS, NodeJS (NestJS)
+- **Data:** Relational databases, MongoDB, Redis, Vector databases
+- **DevOps:** AWS, Docker, LLMOps
+
+As an AI Engineer at BotsCrew, I've worked as a Lead AI Engineer on several AI-based products. I helped develop AI solutions for the MVP stage and was part of the projects for both startups and some Fortune 500 companies. My responsibilities included building AI components and ensuring they could be scaled appropriately as the products developed.
 
 I've always been fascinated by Open-Source projects and its community and were participating in it way before my first commercial experience. One of the Open-Source project I’m proud to be involved in is [Datafaker](https://github.com/datafaker-net/datafaker).
 
