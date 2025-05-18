@@ -1,8 +1,8 @@
 +++
 author = "Illia Pantsyr"
-title = "Paper summary | Lost in the Middle: How Language Models Use Long Contexts"
+title = "Lost in the Middle: How Language Models Use Long Contexts"
 date = "2024-07-03"
-tags = [ "llm", "ai" ]
+tags = [ "llm", "ai", "notes" ]
 +++
 
 Almost 1 year ago, [Lost in the Middle: How Language Models Use Long Contexts](https://arxiv.org/abs/2307.03172) paper was published that empirically investigated the effectiveness of finding information in the input context depending on the location of the correct answer in the context among other relevant information. The researchers used `gpt-3.5-turbo`, `gpt-3.5-turbo-16k`, `Claude 1.3`, `Claude 1.3 (100k)`, `MPT-30B-Instruct` and `LongChat-13B (16k)` and found that the quality jumps A LOT when you change the position of a piece of text with the correct answer among other relevant text that does not contain the answer to the question.
